@@ -5,6 +5,6 @@ interface BurgerBuilder{
     void insertPatty();
     void addCheese();
     void addSauce();
-    Burger getBurger ();
+    Burger getBurger();
 
 }
