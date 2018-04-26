@@ -16,7 +16,7 @@ public class Scenario1_TakeoutBurger {
 
         waiter1.prepareBurger(beefBurger);
         Burger burger2 = beefBurger.getBurger();
-        burger1.show();
+        burger2.show();
 
     }
 }
