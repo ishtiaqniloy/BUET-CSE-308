@@ -1,4 +1,4 @@
-package Scenerio1;
+package Scenario1;
 
 public class Waiter {
     private BurgerBuilder waiterBurgerBuilder;

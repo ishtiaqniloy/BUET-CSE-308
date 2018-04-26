@@ -1,35 +1,34 @@
-package Scenerio1;
+package Scenario1;
 
-public class ChickenBurger implements BurgerBuilder {
+public class BeefBurger implements BurgerBuilder{
     private Burger burger;
 
-    ChickenBurger(){
+    BeefBurger(){
         burger = new Burger();
     }
 
     @Override
     public void takeBun(){
-        burger.add("Medium sized bun");
+        burger.add("Large bun");
     }
 
     @Override
     public void insertPatty(){
-        burger.add("Chicken patty");
+        burger.add("Beef patty");
     }
 
     @Override
     public void addCheese(){
-        burger.add("1 cheese slice");
+        burger.add("2 cheese slices");
     }
 
     @Override
     public void addSauce(){
-        burger.add("Spicy sauce");
+        burger.add("Regular sauce");
     }
 
     @Override
     public Burger getBurger(){
         return burger;
     }
-
 }

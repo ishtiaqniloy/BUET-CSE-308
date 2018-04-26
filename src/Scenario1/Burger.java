@@ -1,4 +1,4 @@
-package Scenerio1;
+package Scenario1;
 
 import java.util.ArrayList;
 
