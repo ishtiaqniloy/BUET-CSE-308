@@ -1,1 +1,1 @@
-# CSE308_Assignment1_Scenerio1
+# CSE308_Assignment1_Scenario1
