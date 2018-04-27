@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09315651-b0b6-4891-8167-10dfabe754be" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scenario2/CoffeeFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scenario2/CoffeeFactoryIntoroducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scenario2/CoffeeFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/scenario2/CoffeeFactory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +25,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoffeeFactory.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CoffeeFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/scenario2/CoffeeFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+            <state relative-caret-position="34">
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CoffeeFactoryIntoroducer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scenario2/CoffeeFactoryIntoroducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+              <folding>
+                <element signature="e#139#140#0" expanded="true" />
+                <element signature="e#184#185#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,6 +75,7 @@
         <option value="$PROJECT_DIR$/src/scenario2/Scenario2_CoffeeFactory.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/scenario2/CoffeeFactory.java" />
+        <option value="$PROJECT_DIR$/src/scenario2/CoffeeFactoryIntoroducer.java" />
       </list>
     </option>
   </component>
@@ -191,12 +206,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524833173151</updated>
-      <workItem from="1524833174955" duration="502000" />
+      <workItem from="1524833174955" duration="1009000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="502000" />
+    <option name="totallyTimeSpent" value="1009000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -255,8 +270,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scenario2/CoffeeFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state relative-caret-position="34">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scenario2/CoffeeFactoryIntoroducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding>
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#184#185#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
