@@ -3,9 +3,11 @@ package Scenario1;
 import java.util.ArrayList;
 
 public class Burger {
+    private String name;
     private ArrayList <String> components;
 
-    Burger(){
+    Burger(String str){
+        name = str;
         components = new ArrayList<String>();
     }
 
@@ -17,7 +19,7 @@ public class Burger {
     }
 
     void show(){
-        System.out.println("Components of this burger:");
+        System.out.println("Components of " + name + " burger:");
         for(String str: components){
             System.out.println(str);
         }

@@ -4,7 +4,7 @@ public class BeefBurger implements BurgerBuilder{
     private Burger burger;
 
     BeefBurger(){
-        burger = new Burger();
+        burger = new Burger("Beef");
     }
 
     @Override
