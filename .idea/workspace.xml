@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09315651-b0b6-4891-8167-10dfabe754be" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scenario2/CoffeeB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scenario2/CoffeeC.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,16 +49,16 @@
         <entry file="file://$PROJECT_DIR$/src/scenario2/CoffeeA.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="34" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="34" />
+              <caret line="6" column="34" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CoffeeB.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/scenario2/CoffeeB.java">
+      <file leaf-file-name="CoffeeC.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scenario2/CoffeeC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="136">
+              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -105,6 +105,7 @@
         <option value="$PROJECT_DIR$/src/scenario2/Coffee.java" />
         <option value="$PROJECT_DIR$/src/scenario2/CoffeeB.java" />
         <option value="$PROJECT_DIR$/src/scenario2/CoffeeA.java" />
+        <option value="$PROJECT_DIR$/src/scenario2/CoffeeC.java" />
       </list>
     </option>
   </component>
@@ -235,12 +236,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524833173151</updated>
-      <workItem from="1524833174955" duration="1353000" />
+      <workItem from="1524833174955" duration="1382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1353000" />
+    <option name="totallyTimeSpent" value="1382000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -322,17 +323,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scenario2/CoffeeA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="34" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/scenario2/CoffeeB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scenario2/CoffeeA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="34" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scenario2/CoffeeC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
         </state>
       </provider>
     </entry>
