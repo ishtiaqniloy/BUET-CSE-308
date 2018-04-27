@@ -4,7 +4,11 @@ public class CoffeeFactory {
     Coffee prepareCoffee(String type){
         Coffee coffee = null;
 
-        if(type.equalsIgnoreCase("A")){
+        if(type==null){
+            return coffee;
+        }
+
+        else if(type.equalsIgnoreCase("A")){
             coffee = new CoffeeA();
         }
         else if(type.equalsIgnoreCase("B")){

@@ -6,7 +6,7 @@ public class CoffeeFactoryIntoroducer {
         factory = new CoffeeFactory();
     }
 
-    CoffeeFactory getFactory(){
+    public static CoffeeFactory getFactory(){
         if (factory==null){
             factory = new CoffeeFactory();
         }
