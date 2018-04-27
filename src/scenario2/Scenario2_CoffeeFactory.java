@@ -3,7 +3,7 @@ public class Scenario2_CoffeeFactory {
     public static void main(String []args){
         System.out.println("Coffee Factory");
 
-        CoffeeFactory factory = CoffeeFactoryIntoroducer.getFactory();
+        CoffeeFactory factory = CoffeeFactoryIntroducer.getFactory();
 
         Coffee coffee1 = factory.prepareCoffee("A");
         coffee1.addComponents();
@@ -13,12 +13,6 @@ public class Scenario2_CoffeeFactory {
 
         Coffee coffee3 = factory.prepareCoffee("C");
         coffee3.addComponents();
-
-
-
-
-
-
 
 
     }

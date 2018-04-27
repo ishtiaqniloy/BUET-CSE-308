@@ -1,8 +1,8 @@
 package scenario2;
 
-public class CoffeeFactoryIntoroducer {
+public class CoffeeFactoryIntroducer {
     private static CoffeeFactory factory = null;
-    CoffeeFactoryIntoroducer(){
+    CoffeeFactoryIntroducer(){
         factory = new CoffeeFactory();
     }
 
