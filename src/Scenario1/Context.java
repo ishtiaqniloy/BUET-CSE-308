@@ -5,10 +5,12 @@ public class Context {
 
     String productName;
     int coinInserted;
+    VendingMachine vendingMachine;
 
-    public Context(String name, int coin) {
+    public Context(String name, int coin, VendingMachine v) {
         productName = name;
         coinInserted = coin;
+        vendingMachine = v;
     }
 
     public State getState() {

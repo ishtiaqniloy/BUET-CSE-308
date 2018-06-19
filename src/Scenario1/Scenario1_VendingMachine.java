@@ -12,5 +12,7 @@ public class Scenario1_VendingMachine {
         vendingMachine.printInventory();
 
 
+
+
     }
 }

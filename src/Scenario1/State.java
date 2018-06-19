@@ -1,5 +1,5 @@
 package Scenario1;
 
 public interface State {
-    public void doAction();
+    public void doAction(Context context);
 }

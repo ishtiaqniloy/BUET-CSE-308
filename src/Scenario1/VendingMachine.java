@@ -5,11 +5,9 @@ import java.util.Hashtable;
 public class VendingMachine {
 
     Hashtable <String, Product> inventory;
-    int cashDeposit;
 
     public VendingMachine() {
         inventory = new Hashtable <String, Product> ();
-        cashDeposit = 0;
     }
 
     boolean addNewProduct(String name, int price){
@@ -44,6 +42,10 @@ public class VendingMachine {
 
     }
 
+    Product getProductInfo(String name){
+        return inventory.get(name);
+    }
+
     void printInventory(){
         System.out.println("***Printing Inventory***");
         for (String name: inventory.keySet() ) {
@@ -54,11 +56,21 @@ public class VendingMachine {
 
     }
 
-    boolean addCash(int num){
-        cashDeposit+=num;
-        return true;
-    }
+    boolean deliverItem(String name){
+        if(!inventory.containsKey(name)){
+            System.out.println("Product not present");
+            return false;
+        }
 
+        else{
+            Product product = inventory.get(name);
+            product.num = product.num-1;
+            inventory.replace(name, product);
+
+            System.out.println("Item delivered");
+            return true;
+        }
+    }
 
 
 }
