@@ -5,9 +5,11 @@ import java.util.Hashtable;
 public class VendingMachine {
 
     Hashtable <Product, Integer> inventory;
+    int cashDeposit;
 
     public VendingMachine() {
         inventory = new Hashtable <Product, Integer> ();
+        cashDeposit = 0;
     }
 
     boolean addNewProduct(String name, int price){
@@ -50,6 +52,11 @@ public class VendingMachine {
             
         }
 
+    }
+
+    boolean addCash(int num){
+        cashDeposit+=num;
+        return true;
     }
 
 }
