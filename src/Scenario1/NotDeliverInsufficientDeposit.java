@@ -5,6 +5,7 @@ public class NotDeliverInsufficientDeposit implements State {
     public void doAction(Context context) {
         System.out.println("Not enough deposit");
         System.out.println("Item not delivered");
+        System.out.println("Coin returned");
         context.setState(this);
     }
 
