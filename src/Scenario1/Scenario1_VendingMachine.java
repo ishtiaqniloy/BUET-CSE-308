@@ -7,6 +7,7 @@ public class Scenario1_VendingMachine {
         VendingMachine vendingMachine = new VendingMachine();
 
         vendingMachine.addNewProduct("pepsi", 10);
+        vendingMachine.insertItem("pepsi", 7);
         vendingMachine.insertItem("pepsi", 5);
         vendingMachine.printInventory();
 

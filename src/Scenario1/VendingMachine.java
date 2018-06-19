@@ -4,24 +4,24 @@ import java.util.Hashtable;
 
 public class VendingMachine {
 
-    Hashtable <Product, Integer> inventory;
+    Hashtable <String, Product> inventory;
     int cashDeposit;
 
     public VendingMachine() {
-        inventory = new Hashtable <Product, Integer> ();
+        inventory = new Hashtable <String, Product> ();
         cashDeposit = 0;
     }
 
     boolean addNewProduct(String name, int price){
-        Product product = new Product(name, price);
+        Product product = new Product(name, price,0);
 
-        if(inventory.containsKey(product)){
+        if(inventory.containsKey(name)){
             System.out.println("Product already present");
             return false;
         }
 
         else {
-            inventory.put(product, 0);
+            inventory.put(name, product);
             System.out.println("New Product added to inventory");
             return true;
         }
@@ -29,17 +29,16 @@ public class VendingMachine {
     }
 
     boolean insertItem(String name, int num){
-        Product product = new Product(name, 0);
-        if(!inventory.containsKey(product)){
+        if(!inventory.containsKey(name)){
             System.out.println("Product not present");
             return false;
         }
 
         else{
-            int currnetVal = inventory.get(product);
-            inventory.replace(product, currnetVal+num);
+            Product product = inventory.get(name);
+            product.num = product.num+num;
+            inventory.replace(name, product);
             System.out.println("Items Inserted");
-            //System.out.println(product.name+inventory.get(product));
             return true;
         }
 
@@ -47,9 +46,10 @@ public class VendingMachine {
 
     void printInventory(){
         System.out.println("***Printing Inventory***");
-        for (Product product: inventory.keySet() ) {
-            System.out.println("<("+product.name+","+product.price+"):"+inventory.get(product)+">");
-            
+        for (String name: inventory.keySet() ) {
+            Product product = inventory.get(name);
+
+            System.out.println(product);
         }
 
     }
@@ -58,5 +58,7 @@ public class VendingMachine {
         cashDeposit+=num;
         return true;
     }
+
+
 
 }
