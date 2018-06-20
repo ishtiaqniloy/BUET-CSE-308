@@ -27,7 +27,7 @@ public class Batch {
     boolean remove(int stdID){
         if (observers.containsKey(stdID)){
             observers.remove(stdID);
-            System.out.println("Observer removed");
+            System.out.println("Observer removed from batch " + batchNo);
             return true;
         }
 

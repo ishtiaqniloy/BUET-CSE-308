@@ -16,7 +16,6 @@ public class Student extends MessageObserver {
     @Override
     public boolean update() {
         this.message = batch.getMessage();
-
         System.out.println("Message received by " + stdID + " : " + this.message);
 
         return true;
