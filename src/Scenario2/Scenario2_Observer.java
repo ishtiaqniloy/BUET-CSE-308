@@ -19,20 +19,22 @@ public class Scenario2_Observer {
 
             if(ch==1){
                 int stdID;
+                String email;
                 int batchNO;
 
-                System.out.print("Enter stdID and BatchNO : ");
+                System.out.print("Enter stdID, Email Address and BatchNO : ");
                 stdID = sc.nextInt();
+                email = sc.next();
                 batchNO = sc.nextInt();
 
-                //System.out.println(stdID + " " + batchNO);
+                //System.out.println(stdID +" " + email + " " + batchNO);
 
                 if(!batches.containsKey(batchNO)){
                     batches.put(batchNO, new Batch(batchNO));
                 }
 
                 Batch batch = batches.get(batchNO);
-                new Student(stdID, batch);
+                new Student(stdID, email, batch);
 
 //                if (flag){
 //                    System.out.println(stdID + " Subscription successful");
