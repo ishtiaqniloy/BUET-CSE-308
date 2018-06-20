@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Scenario2_Observer {
     public static void main(String []args){
-        System.out.println("Hello World");
+        //System.out.println("Hello World");
 
         int ch;
         Scanner sc = new Scanner(System.in);
@@ -25,19 +25,21 @@ public class Scenario2_Observer {
                 stdID = sc.nextInt();
                 batchNO = sc.nextInt();
 
+                //System.out.println(stdID + " " + batchNO);
+
                 if(!batches.containsKey(batchNO)){
                     batches.put(batchNO, new Batch(batchNO));
                 }
 
                 Batch batch = batches.get(batchNO);
-                boolean flag = batch.attach(stdID, new Student(stdID, batch));
+                new Student(stdID, batch);
 
-                if (flag){
-                    System.out.println(stdID + " Subscription successful");
-                }
-                else {
-                    System.out.println("Subscription failed");
-                }
+//                if (flag){
+//                    System.out.println(stdID + " Subscription successful");
+//                }
+//                else {
+//                    System.out.println("Subscription failed");
+//                }
 
             }
 

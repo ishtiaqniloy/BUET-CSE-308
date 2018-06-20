@@ -11,17 +11,23 @@ public class Batch {
         this.batchNo = batchNo;
         observers = new Hashtable<Integer, MessageObserver>();
         message = null;
+        observers.clear();
     }
 
     boolean attach(int stdID, MessageObserver ob){
+        //System.out.println("Attach Called");
         if (observers.containsKey(stdID)){
+            //ob = observers.get(stdID);
+            //System.out.println("stdID = " + ((Student)ob).stdID + " Batch = "  + ((Student)ob).batch.batchNo );
             System.out.println("Already attached");
             return false;
         }
+        else {
+            observers.put(stdID, ob);
+            System.out.println("Subscription Successful");
+            return true;
 
-        observers.put(stdID, ob);
-
-        return true;
+        }
     }
 
     boolean remove(int stdID){
@@ -48,5 +54,14 @@ public class Batch {
             ob.update();
         }
     }
+
+//    void print(){
+//        System.out.println("***Printing***");
+//        for (MessageObserver ob : observers.values()){
+//            Student student = (Student) ob;
+//
+//            System.out.println("<" + student.stdID + "," + student.batch.batchNo + ">");
+//        }
+//    }
 
 }
