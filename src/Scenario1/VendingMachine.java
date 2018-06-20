@@ -28,7 +28,7 @@ public class VendingMachine {
 
     boolean insertItem(String name, int num){
         if(!inventory.containsKey(name)){
-            System.out.println("Product not present");
+            System.out.println("Product not present. Please add new product at first.");
             return false;
         }
 
@@ -36,7 +36,7 @@ public class VendingMachine {
             Product product = inventory.get(name);
             product.num = product.num+num;
             inventory.replace(name, product);
-            System.out.println("Items Inserted");
+            System.out.println(num + " items Inserted");
             return true;
         }
 
