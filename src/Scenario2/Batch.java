@@ -24,6 +24,29 @@ public class Batch {
         return true;
     }
 
+    boolean remove(int stdID){
+        if (observers.containsKey(stdID)){
+            observers.remove(stdID);
+            System.out.println("Observer removed");
+            return true;
+        }
 
+        return false;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+        notifyAllObservers();
+    }
+
+    public void notifyAllObservers(){
+        for ( MessageObserver ob : observers.values() ) {
+            ob.update();
+        }
+    }
 
 }
