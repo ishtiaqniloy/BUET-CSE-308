@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Scenario1_VendingMachine {
     public static void main(String []args){
-        System.out.println("Hello World");
-
         VendingMachine vendingMachine = new VendingMachine();
 
         DeliverNoChange deliverNoChange = new DeliverNoChange();
@@ -15,23 +13,22 @@ public class Scenario1_VendingMachine {
 
         Scanner scanner = new Scanner(System.in);
         int ch=0;
+
         while(ch!='q'){
             System.out.println("1.Add New Product 2.Insert Item 3.See Inventory 4.Get Item 5.Quit");
             ch = scanner.nextInt();
 
             if(ch==1){
-                System.out.println("Enter Product Name:");
-                String productName = scanner.nextLine();
-                System.out.println("Enter Product Price:");
+                System.out.print("Enter Product Name and Product Price: ");
+                String productName = scanner.next();
                 int productPrice = scanner.nextInt();
 
                 vendingMachine.addNewProduct(productName, productPrice);
 
             }
             else if (ch==2){
-                System.out.println("Enter Product Name:");
-                String productName = scanner.nextLine();
-                System.out.println("Enter Number of Items to add:");
+                System.out.print("Enter Product Name and Number of Items to add: ");
+                String productName = scanner.next();
                 int productNum = scanner.nextInt();
 
                 vendingMachine.insertItem(productName, productNum);
@@ -40,9 +37,8 @@ public class Scenario1_VendingMachine {
                 vendingMachine.printInventory();
             }
             else if (ch==4){
-                System.out.println("Enter Product Name:");
-                String productName = scanner.nextLine();
-                System.out.println("Enter coin value:");
+                System.out.print("Enter Product Name and Coin Value: ");
+                String productName = scanner.next();
                 int coin = scanner.nextInt();
 
                 Product product = vendingMachine.getProductInfo(productName);
@@ -78,6 +74,8 @@ public class Scenario1_VendingMachine {
             else{
                 System.out.println("Invalid Choice");
             }
+
+            System.out.println();
 
         }
 

@@ -11,6 +11,8 @@ public class Context {
         productName = name;
         coinInserted = coin;
         vendingMachine = v;
+
+        state = null;
     }
 
     public State getState() {
