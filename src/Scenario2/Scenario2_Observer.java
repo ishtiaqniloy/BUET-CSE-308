@@ -10,7 +10,7 @@ public class Scenario2_Observer {
         int ch;
         Scanner sc = new Scanner(System.in);
 
-        Hashtable<Integer, Batch> batches = new Hashtable<Integer, Batch>();
+        Hashtable<Integer, BatchCR> batchCRs = new Hashtable<Integer, BatchCR>();
 
         while (true){
             System.out.println("1.Subscribe 2.Unsubscribe 3.New Message 4.Quit");
@@ -29,12 +29,12 @@ public class Scenario2_Observer {
 
                 //System.out.println(stdID +" " + email + " " + batchNO);
 
-                if(!batches.containsKey(batchNO)){
-                    batches.put(batchNO, new Batch(batchNO));
+                if(!batchCRs.containsKey(batchNO)){
+                    batchCRs.put(batchNO, new BatchCR(batchNO));
                 }
 
-                Batch batch = batches.get(batchNO);
-                new Student(stdID, email, batch);
+                BatchCR batchCR = batchCRs.get(batchNO);
+                new Student(stdID, email, batchCR);
 
 //                if (flag){
 //                    System.out.println(stdID + " Subscription successful");
@@ -53,12 +53,12 @@ public class Scenario2_Observer {
                 stdID = sc.nextInt();
                 batchNO = sc.nextInt();
 
-                if(!batches.containsKey(batchNO)){
-                    System.out.println("Batch not available");
+                if(!batchCRs.containsKey(batchNO)){
+                    System.out.println("BatchCR not available");
                 }
                 else {
-                    Batch batch = batches.get(batchNO);
-                    boolean flag = batch.remove(stdID);
+                    BatchCR batchCR = batchCRs.get(batchNO);
+                    boolean flag = batchCR.remove(stdID);
 
                     if (flag){
                         System.out.println(stdID + " Unsubscribe successful");
@@ -78,13 +78,13 @@ public class Scenario2_Observer {
                 batchNO = sc.nextInt();
                 message = sc.next();
 
-                if(!batches.containsKey(batchNO)){
-                    batches.put(batchNO, new Batch(batchNO));
+                if(!batchCRs.containsKey(batchNO)){
+                    batchCRs.put(batchNO, new BatchCR(batchNO));
                 }
 
-                Batch batch = batches.get(batchNO);
+                BatchCR batchCR = batchCRs.get(batchNO);
 
-                batch.setMessage(message);
+                batchCR.setMessage(message);
 
             }
             else if(ch==4){

@@ -2,12 +2,12 @@ package Scenario2;
 
 import java.util.Hashtable;
 
-public class Batch {
+public class BatchCR {
     int batchNo;
     Hashtable <Integer, MessageObserver> observers;
     String message;
 
-    public Batch(int batchNo) {
+    public BatchCR(int batchNo) {
         this.batchNo = batchNo;
         observers = new Hashtable<Integer, MessageObserver>();
         message = null;
@@ -18,7 +18,7 @@ public class Batch {
         //System.out.println("Attach Called");
         if (observers.containsKey(stdID)){
             //ob = observers.get(stdID);
-            //System.out.println("stdID = " + ((Student)ob).stdID + " Batch = "  + ((Student)ob).batch.batchNo );
+            //System.out.println("stdID = " + ((Student)ob).stdID + " BatchCR = "  + ((Student)ob).batchCR.batchNo );
             System.out.println("Already attached");
             return false;
         }
@@ -33,7 +33,7 @@ public class Batch {
     boolean remove(int stdID){
         if (observers.containsKey(stdID)){
             observers.remove(stdID);
-            System.out.println("Observer removed from batch " + batchNo);
+            System.out.println("Observer removed from batchCR " + batchNo);
             return true;
         }
 
@@ -60,7 +60,7 @@ public class Batch {
 //        for (MessageObserver ob : observers.values()){
 //            Student student = (Student) ob;
 //
-//            System.out.println("<" + student.stdID + "," + student.batch.batchNo + ">");
+//            System.out.println("<" + student.stdID + "," + student.batchCR.batchNo + ">");
 //        }
 //    }
 

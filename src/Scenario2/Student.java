@@ -5,9 +5,9 @@ public class Student extends MessageObserver {
     String emailAddress;
     String message;
 
-    public Student(int stdID, String email, Batch batch) {
-        this.batch = batch;
-        batch.attach(stdID, this);
+    public Student(int stdID, String email, BatchCR batchCR) {
+        this.batchCR = batchCR;
+        batchCR.attach(stdID, this);
 
         this.stdID = stdID;
         this.emailAddress = email;
@@ -17,7 +17,7 @@ public class Student extends MessageObserver {
 
     @Override
     public boolean update() {
-        this.message = batch.getMessage();
+        this.message = batchCR.getMessage();
         System.out.println("Message emailed to " + emailAddress + " for stdID " + stdID + ": " + this.message);
 
         return true;
