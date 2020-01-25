@@ -16,6 +16,5 @@ State pattern implemented in Java
 # CSE_308_Observer
 Observer pattern implemented in Java
 
-
-
-
+# CSE_308_Mediator
+Mediator pattern implemented in Java
