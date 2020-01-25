@@ -7,11 +7,15 @@ Factory pattern implemented in Java
 # CSE_308_Abstract_Factory
 Abstract Factory pattern implemented in Java
 
+# CSE_308_Builder
+State pattern implemented in Java
+
 # CSE_308_State
 State pattern implemented in Java
 
-# CSE_308_Builder
-State pattern implemented in Java
+# CSE_308_Observer
+Observer pattern implemented in Java
+
 
 
 
